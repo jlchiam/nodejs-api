@@ -6,7 +6,8 @@ At the terminal, type in the following codes
 `curl -i http://localhost:8080/fx`
 
 <p>Everything below here, I understand in theory but not practical.</p>
-==========
+<hr>
+
 CI/CD pipeline implemented using GitHub Actions:
 
 * create docker container
