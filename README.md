@@ -5,7 +5,7 @@ docker run -d -p 8080:8080 u1ih/nodejs-api
 At the terminal, type in the following codes
 `curl -i http://localhost:8080/fx`
 
-All these, I really don't know.
+<p>Everything below here, I understand in theory but not practical.</p>
 CI/CD pipeline implemented using GitHub Actions:
 
 * create docker container
