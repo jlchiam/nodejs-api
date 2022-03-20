@@ -26,8 +26,35 @@ At the terminal, type in the following codes
 
     `docker run -d -p 8080:8080 mynodejs-api`
 
+8. Connect Cloud Build to Github Repo
+9. Create a Trigger, push event, configuration choose Dockerfile
+10. Make changes to the codes
+11. At terminal, go back to the root directory of the repo. In this case is `jchiamrp/nodejs-api`
+12. Use the following commands to commit and push.
+    `git add --all
+    git commit -m "some message"
+    git push`
 
+13. Verify in Cloud Build History
 
+    <img width="595" alt="200 nodejs cloudbuild history" src="https://user-images.githubusercontent.com/11884697/159163111-62f07e85-0bbb-4fc0-ba38-45d6df46bb36.PNG">
+
+14. At Github actions page, create a new workflow -> set up a workflow yourself -> main.yml
+
+15. At Github settings page, create the following environment secrets 
+    [link1 - broken images](https://gcp-examquestions.com/ci-cd-solutions-deploy-to-google-cloud-run-using-github-actions/?msclkid=9a048adda84f11ec8e68694d01d9ee84)
+    [link2](https://towardsdatascience.com/deploy-to-google-cloud-run-using-github-actions-590ecf957af0)
+
+    GCP_APPLICATION — Your Google service account application name for your Cloud Run service.
+    GCP_CREDENTIALS — This is your service account credentials that you will need to generate in the Google Cloud Console. You downloaded these in step one. Copy the contents of the JSON file you created, provide that as a value to this secret, and delete that file.
+    GCP_EMAIL — This is the email that identifies the service account that you have provided credentials for in the secret labeled GCP_CREDENTIALS.
+    GCP_PROJECT — Your Google Project that you will deploying to Cloud Run.
+
+    <img width="596" alt="250_github env secrets" src="https://user-images.githubusercontent.com/11884697/159164425-0cc9b89d-2f9d-418e-8111-3fe44c09695a.PNG">
+
+16. End outcome still fail, no time to troubleshoot :(
+
+<hr />
 
 CI/CD pipeline implemented using GitHub Actions:
 
