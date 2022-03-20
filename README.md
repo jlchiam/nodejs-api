@@ -12,9 +12,13 @@ At the terminal, type in the following codes
 ## 1. Creating a project on GCP
 
 1. I went to GCP console and created a new project.
-2. Make sure to enable *Google Cloud Build API* and *Artifact Registry API* .
-3. Go to Uli's github to fork the repo. Get the [link](https://github.com/jlchiam/nodejs-api.git)
-4. Return to GCP terminal and create the docker container.
+2. Make sure to enable *Google Cloud Build API* .
+3. Go to Uli's github to fork the repo. Get the [link] (https://github.com/jlchiam/nodejs-api.git)
+4. change directory to the nodejs-api directory
+
+    `cd nodejs-api`
+    
+5. Return to GCP terminal and create the docker container.
 
     `docker run -d -p 8080:8080 u1ih/nodejs-api`
 
